@@ -203,7 +203,7 @@ header .navbar u1 li a:hover{
         width: 100%;
     }
 
-    .education .box-container .box{
+    .education-experience .box-container .box{
         width: 100%;
     }
 }
@@ -234,6 +234,12 @@ header .navbar u1 li a:hover{
     color: #eee;
     padding: 1rem 0;
 }
+.home strong{
+    font-size: 2rem;
+    color: var(--red);
+    padding: 1rem 0;
+    
+}
 
 .about .row{
     display: flex;
@@ -262,7 +268,7 @@ header .navbar u1 li a:hover{
 }
 
 .about .row .counter{
-    flex: 1 1 48rem;
+    flex: 1 1 4.8rem;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -285,7 +291,7 @@ header .navbar u1 li a:hover{
     color: #fff;
 }
 
-.education .box-container{
+.education-experience .box-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -294,7 +300,7 @@ header .navbar u1 li a:hover{
     padding-left: 3rem;
 }
 
-.education .box-container .box{
+.education-experience .box-container .box{
     width: 27rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
@@ -302,7 +308,7 @@ header .navbar u1 li a:hover{
     position: relative;
 }
 
-.education .box-container .box span{
+.education-experience .box-container .box span{
     font-size: 1.3rem;
     background: #222;
     color: #fff;
@@ -310,19 +316,102 @@ header .navbar u1 li a:hover{
     padding: .5rem 2.5rem;
 }
 
-.education .box-container .box h3{
+.education-experience .box-container .box h2{
+    font-size: 2rem;
+    color:var(--red);
+    flex-wrap: wrap;
+}
+
+.education-experience .box-container .box h3{
     font-size: 2rem;
     color: #fff;
     padding-top: 1.5rem;
+    flex-wrap: wrap;
 }
 
-.education .box-container .box p{
-    font-size: 1.4rem;
+.education-experience .box-container .box h4{
+    font-size: 1.5rem;
     color: #eee;
+    padding: .5rem 0;
+}
+
+.education-experience .box-container .box p{
+    font-size: 1.4rem;
+    color: #ddd;
     padding: 1rem 0;
 }
 
-.education .box-container .box i{
+.projects .box-container .box b{
+    font-size: 1.4rem;
+    color: var(--red);
+    padding: 1rem 0;
+}
+
+.education-experience .box-container .box i{
+    position: absolute;
+    top:-1.5rem;
+    left:-2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--red);
+}
+
+.projects .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+}
+
+.projects .box-container .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+}
+
+.projects .box-container .box span{
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+}
+
+.projects .box-container .box h2{
+    font-size: 2rem;
+    color:var(--red);
+    flex-wrap: wrap;
+}
+
+.projects .box-container .box h3{
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.projects .box-container .box h4{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: .5rem 0;
+}
+
+.projects .box-container .box p{
+    font-size: 1.4rem;
+    color: #ddd;
+    padding: 1rem 0;
+}
+
+.projects .box-container .box i{
     position: absolute;
     top:-1.5rem;
     left:-2.5rem;

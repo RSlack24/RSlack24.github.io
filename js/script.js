@@ -10,3 +10,10 @@ $(document).ready(function(){
         $('header').removeClass('toggle');
     })
 });
+
+$(document).ready(function () {
+    $("#resume").click(function (e) {
+        e.preventDefault();
+        window.location.href = "documents/sample.txt";
+    });
+});
