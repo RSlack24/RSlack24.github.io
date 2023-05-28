@@ -212,7 +212,7 @@ header .navbar u1 li a:hover{
     display: flex;
     justify-content: center;
     flex-flow: column;
-    padding: 0 15rem;
+    padding: 1rem 0;
 }
 
 .home h3{
