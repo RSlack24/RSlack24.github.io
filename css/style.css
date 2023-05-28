@@ -293,7 +293,7 @@ header .navbar u1 li a:hover{
 
 .education-experience .box-container{
     display: flex;
-    align-items: center;
+    align-items:initial;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem 0;
@@ -363,7 +363,7 @@ header .navbar u1 li a:hover{
 
 .projects .box-container{
     display: flex;
-    align-items: center;
+    align-items: initial;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem 0;
