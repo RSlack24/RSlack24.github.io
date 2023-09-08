@@ -9,9 +9,17 @@ $(document).ready(function(){
         $('#menu').removeClass('fa-times');
         $('header').removeClass('toggle');
     })
-});
 
-$(document).ready(function () {
+    $('a[href*="#"]').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop : $($(this).attr('href')).offset().top,
+        },
+            500,
+            "linear"
+        );
+    });
+
     $("#resume").click(function (e) {
         e.preventDefault();
         window.location.href = "documents/Ryn_Slack_Resume.pdf";
