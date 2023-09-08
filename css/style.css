@@ -69,6 +69,30 @@ section{
 
 }
 
+/* Default link color */
+.projects a:link {
+    color: #eee;
+    text-decoration: underline;
+}
+
+/* Visited link color */
+.projects a:visited {
+    color: var(--red);
+    text-decoration: underline;
+}
+
+/* Hovered link color */
+.projects a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+/* Active link color (when clicked) */
+.projects a:active {
+    color: #333;
+    text-decoration: underline;
+}
+
 .heading{
     text-align: center;
     margin: 0 6rem;
@@ -484,6 +508,7 @@ header .navbar u1 li a:hover{
     padding: 1rem 0;
     font-weight: normal;
     white-space: nowrap;
+    text-decoration: underline;
 }
 
 .contact .row .content .info h3 i{
