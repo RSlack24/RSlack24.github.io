@@ -1,21 +1,32 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
 
+    // Email recipient (replace with your email address)
     $to = "eks83@georgetown.edu";
-    $subject = "$name is reaching out via your resume website";
-    $headers = "From: $email";
-    
-    $email_body = "Name: $name\n";
-    $email_body .= "Email: $email\n";
-    $email_body .= "Message:\n$message";
-    
-    if (mail($to, $subject, $email_body, $headers)) {
-        echo "Your message has been sent successfully!";
+
+    // Email subject
+    $subject = "Contact Form Submission from $name";
+
+    // Email headers
+    $headers = "From: $email" . "\r\n" .
+               "Reply-To: $email" . "\r\n" .
+               "X-Mailer: PHP/" . phpversion();
+
+    // Send email
+    if (mail($to, $subject, $message, $headers)) {
+        // Email sent successfully
+        echo "Thank you for your message, $name! We will get back to you shortly.";
     } else {
-        echo "Sorry, there was an error sending your message.";
+        // Email sending failed
+        echo "Oops! Something went wrong. Please try again later.";
     }
+} else {
+    // Handle invalid form submissions
+    echo "Invalid request.";
 }
 ?>
+
