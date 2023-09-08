@@ -66,6 +66,7 @@ section{
 
 .btn:hover{
     background: var(--red);
+    cursor: url(../images/Magic_cursor.png), pointer;
 
 }
 
@@ -165,6 +166,7 @@ header .navbar u1 li a{
 
 header .navbar u1 li a:hover{
     background:var(--red);
+    cursor: url(../images/Magic_cursor.png), pointer;
 }
 
 #menu{
