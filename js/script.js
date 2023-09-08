@@ -14,6 +14,6 @@ $(document).ready(function(){
 $(document).ready(function () {
     $("#resume").click(function (e) {
         e.preventDefault();
-        window.location.href = "documents/sample.txt";
+        window.location.href = "documents/Ryn_Slack_Resume.pdf";
     });
 });
